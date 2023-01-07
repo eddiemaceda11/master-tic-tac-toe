@@ -5,21 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Ninja Vs. Luchador</title>
   </head>
 
   <body>
-    <div class="container grid">
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-3"></div>
-      <div class="box-4"></div>
-      <div class="box-5"></div>
-      <div class="box-6"></div>
-      <div class="box-7"></div>
-      <div class="box-8"></div>
-      <div class="box-9"></div>
-    </div>
+    <!-- Header -->
+    <p class="title">Ninja Vs. Luchador</p>
+
+    <section class="header">
+      <header class="container flex-x">
+        <div class="player-1 flex-x">
+          <img src="img/ninjasolo.svg" class="ninja" alt="" />
+          <form class="form-control flex-y">
+            <label>Player 1: </label>
+            <input type="text" />
+            <input type="submit" value="Enter Name" />
+          </form>
+        </div>
+        <div class="scoreboard flex-x">
+          <p>1</p>
+          <div class="scoreboard-line"></div>
+          <p>3</p>
+        </div>
+        <div class="player-2 flex-x">
+          <form class="form-control flex-y">
+            <label>Player 2: </label>
+            <input type="text" />
+            <input type="submit" value="Enter Name" />
+          </form>
+          <img src="img/muchaLucha.svg" class="lucha" alt="" />
+        </div>
+      </header>
+    </section>
+
+    <!-- Main -->
+    <section class="main container">
+      <div class="box-container grid">
+        <div class="box box-1">
+          <img src="img/ninjasolo.svg" class="ninja-piece" alt="" />
+        </div>
+        <div class="box box-2">
+          <img src="img/muchaLucha.svg" class="lucha-piece" alt="" />
+        </div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+        <div class="box box-7"></div>
+        <div class="box box-8"></div>
+        <div class="box box-9"></div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
