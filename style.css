@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Permanent+Marker&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Moon Dance", cursive;
+}
+
+body {
+  position: relative;
+  color: #000;
+  background-position: center center;
+}
+
+.title {
+  height: 60px;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  color: rgb(241, 32, 5);
+
+  font-family: "Permanent Marker", cursive;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0);
+}
+
+.header .container {
+  background-position: center center;
+  color: #000;
+  border: none;
+  /* overflow: visible; */
+}
+
+.header .flex-x {
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Players */
+.form-control input[type="text"] {
+  width: 9rem;
+  height: 1.8rem;
+  font-size: 28px;
+  padding-left: 8px;
+  /* padding-top: 2px;
+  padding-bottom: 2px; */
+  outline: none;
+}
+
+.form-control input[type="submit"] {
+  border: none;
+  background-color: rgb(241, 32, 5);
+  padding: 2px 14px;
+  margin-top: 8px;
+  font-size: 20px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.form-control input[type="submit"]:hover {
+  background-color: rgb(255, 30, 0);
+}
+
+.player-1 {
+  gap: -8rem;
+}
+
+.player-1,
+.player-2 {
+  /* border: 1px solid green; */
+  width: 550px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.header .flex-y {
+  gap: 8px;
+  align-items: center;
+}
+
+.header .container {
+  width: 1100px;
+  /* border: 1px solid red; */
+  margin: 40px auto;
+  height: 110px;
+}
+
+/* Scoreboard */
+
+.scoreboard {
+  width: 28rem;
+  /* border: 1px solid purple; */
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.scoreboard > :first-child {
+  padding-left: 32px;
+}
+
+.scoreboard > :nth-child(3) {
+  padding-right: 32px;
+}
+
+.scoreboard-line {
+  width: 1px;
+  height: 108px;
+  background-color: #000;
+  /* overflow: visible; */
+}
+
+/* Grid-Boxes */
+.box-container {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border: 2px solid green;
+  margin: 160px auto;
+  height: 400px;
+  background-color: rgb(241, 32, 5);
+}
+
+.main {
+}
+
+/* Utils */
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  display: grid;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  border: 4px solid black;
+}
+
+.box:hover {
+  background-color: rgb(245, 240, 239);
+}
+
+.flex-x {
+  display: flex;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Images */
+.ninja {
+  height: 8rem;
+}
+
+.lucha {
+  height: 7rem;
+}
+
+.ninja-piece {
+  height: 7.4rem;
+  width: 90%;
+}
+
+.lucha-piece {
+  height: 6.2rem;
+  margin-top: 12px;
+  margin-left: 4px;
+  width: 100%;
+}
